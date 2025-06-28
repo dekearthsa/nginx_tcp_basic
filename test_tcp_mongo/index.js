@@ -4,7 +4,7 @@ import { MongoClient } from 'mongodb';
 const fastify = Fastify({ logger: true });
 
 
-const MONGO_URI = 'mongodb://root:root@8.tcp.ngrok.io:13256/?authSource=admin';
+const MONGO_URI = 'mongodb://root:root@0.tcp.ap.ngrok.io:18673/?authSource=admin';
 const client = new MongoClient(MONGO_URI, {
     tls: false,
     serverSelectionTimeoutMS: 5000

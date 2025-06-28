@@ -18,8 +18,8 @@ services:
         - net
   database:
     container_name: database
-    image: mongo:6.0.14  # ✅ รองรับ ARM64 / Mac M1+ อย่างสมบูรณ์
-    platform: linux/arm64  # ✅ บังคับ platform
+    image: mongo:6.0.14   
+    platform: linux/arm64 
     restart: always
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
